@@ -13,7 +13,7 @@ float x1 , x2 ;
 float x3 ;
 float delta ;
 
-cout<<"1_ moadele daraje 2"<< '\n'<< "2_basic calculator" << "\n" << "3_matrix" <<endl;
+cout<<"1_ moadele daraje 2"<< '\n'<< "2_basic calculator" << "\n" << "3_average" <<endl;
 cin>>x;
 
 
@@ -87,6 +87,27 @@ cin>>x;
     
     if(x==3)
     {
+         cout<<"moadele chand nomre ra mikhahid hesab konid? ";
+         int arraysize;
+         float nomreh[arraysize];
+         int zarib[arraysize];
+         float total[arraysize];
+         float t=0;
+         int z=0;
+         cin>>arraysize;
+         cout<<"nomre ra be hamrahe zaribash vared konid: ";
+         for(int i=0;i<arraysize;i++)
+        {
+            cin>>nomreh[i];
+            cin>>zarib[i];
+            total[i]=nomreh[i]*zarib[i];
+        }
+        for(int j=0;j<arraysize;j++)
+        {
+            t+=total[j];
+            z+=zarib[j];
+        }
+        cout<<"average= "<<t/z<<endl;
 
     }
 
